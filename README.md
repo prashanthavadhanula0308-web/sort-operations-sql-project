@@ -1,76 +1,68 @@
-# sort-operations-sql-project
+# Amazon SORT Operations Analysis (SQL Project)
 
-SQL project to analyze SORT department operations performance.
-
----
-
-## 📊 Project Overview
-
-This project analyzes SORT department performance using SQL.  
-The dataset includes shift-level operational data such as headcount, units sorted, hours worked, and error counts.
+## Overview
+I built this project to understand how SORT operations actually perform and what factors impact productivity on the floor. Since I currently work in SORT operations, I wanted to analyze real-world scenarios like headcount planning, idle time, and package mix using data.
 
 ---
 
-## 🛠️ Tools Used
-
-- MySQL Workbench
-- SQL (Joins, Aggregations, Group By)
-- Excel (Data preparation)
-- GitHub (Project documentation)
-
----
-
-## 📂 Dataset Columns
-
-- date
-- shift_name (FHN / BHN)
-- headcount
-- units_sorted
-- hours_worked
-- errors_count
+## What I Wanted to Figure Out
+- Why does SORT rate fluctuate during a shift?
+- How does headcount impact productivity?
+- What happens when medium (big box) percentage increases?
+- How does idle time affect overall performance?
 
 ---
 
-## 📈 Key Insights
+## Dataset
+I created a structured dataset to represent SORT operations with the following fields:
 
-- BHN shift showed higher total output compared to FHN shift.
-- Productivity differences identified between shifts.
-- Peak performance days identified using daily aggregation.
-- Error rate analysis used to evaluate quality.
-
----
-
-## 📸 SQL Query Results
-
-### 🔹 Total Units by Shift
-![Total Units](data/screenshots/shift_total_units.png)
+- Date  
+- Shift (FHN, BHD, etc.)  
+- Headcount  
+- Units Sorted  
+- Hours Worked  
+- Errors Count  
 
 ---
 
-### 🔹 Productivity by Shift
-![Productivity](data/screenshots/shift_productivity.png)
+## What I Did
+Using SQL, I worked on:
+
+- Calculating units per hour (productivity)
+- Comparing performance across different shifts
+- Looking at how headcount impacts output
+- Identifying patterns in idle time
+- Understanding how operational factors affect SORT performance
 
 ---
 
-### 🔹 Error Rate by Shift
-![Error Rate](data/screenshots/shift_error_rate.png)
+## Key Takeaways
+- When medium package percentage increases, SORT rate tends to drop because handling time is higher  
+- Idle time has a direct impact on productivity — even small gaps add up  
+- Overstaffing without enough work can reduce efficiency  
+- Balanced staffing is important to maintain consistent performance  
 
 ---
 
-### 🔹 Top Performing Day
-![Top Day](data/screenshots/top_performing_day.png)
+## Why This Matters
+In a fast-paced environment like SORT, small inefficiencies can impact the entire shift. This project shows how data can be used to make better decisions around staffing, workload distribution, and overall performance.
 
 ---
 
-## 🧠 Business Impact
-
-- Helps identify high-performing shifts
-- Supports staffing optimization decisions
-- Improves operational efficiency tracking
-- Enables quality control monitoring
+## What I Learned
+This project helped me:
+- Improve my SQL skills  
+- Think more analytically about operations  
+- Connect real-world problems with data analysis  
 
 ---
 
-## 📌 Conclusion
+## Next Steps
+- Add more data (like density and package mix %)  
+- Build a dashboard for better visualization  
+- Explore automation using Python  
 
-This project demonstrates how SQL can be used to analyze real-world operational data and generate actionable insights.
+---
+
+## Project Link
+https://github.com/prashanthavadhanula0308-web/sort-operations-sql-project
